@@ -22,8 +22,8 @@ Chatroom|Not started|Not tested|Not tested|
 
 ## Prototype
 
-| Case Name | Image |
-|:---------:|:-----:|
+Case Name | Image
+:---:|:---:
 |Users|![Prototype of Main](/resources/prototypes/Main_Users.png)|
 |Chats|![Prototype of Main](/resources/prototypes/Main_Chats.png)|
 |Chatroom|![Prototype of Main](/resources/prototypes/Chatroom.png)|
