@@ -13,7 +13,7 @@ Not yet 😓
 Case Name | Image
 :---:|:---:
 Intro|None
-Users|None
+Users|<img src="../resources/screenshots/flutter/Screenshot_Users.png" alt="Screenshot of Users" width="360"/>
 Chats|None
 Chatroom|None
 

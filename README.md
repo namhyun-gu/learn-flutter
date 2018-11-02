@@ -9,7 +9,7 @@ Simple Chat application write by mobile app frameworks.
 Case Name | Status | Test Android | Test iOS
 :---:|:---:|:---:|:---:
 Intro|Not started|Not tested|Not tested|
-Users|Not started|Not tested|Not tested|
+Users|In Progress|Not tested|Not tested|
 Chats|Not started|Not tested|Not tested|
 Chatroom|Not started|Not tested|Not tested|
 
