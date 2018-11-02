@@ -8,6 +8,7 @@ Simple Chat application write by mobile app frameworks.
 
 Case Name | Status | Test Android | Test iOS
 :---:|:---:|:---:|:---:
+Intro|Not started|Not tested|Not tested|
 Users|Not started|Not tested|Not tested|
 Chats|Not started|Not tested|Not tested|
 Chatroom|Not started|Not tested|Not tested|
@@ -16,6 +17,7 @@ Chatroom|Not started|Not tested|Not tested|
 
 Case Name | Status | Test Android | Test iOS
 :---:|:---:|:---:|:---:
+Intro|Not started|Not tested|Not tested|
 Users|Not started|Not tested|Not tested|
 Chats|Not started|Not tested|Not tested|
 Chatroom|Not started|Not tested|Not tested| 
@@ -24,6 +26,7 @@ Chatroom|Not started|Not tested|Not tested|
 
 Case Name | Image
 :---:|:---:
-|Users|![Prototype of Main](/resources/prototypes/Main_Users.png)|
-|Chats|![Prototype of Main](/resources/prototypes/Main_Chats.png)|
-|Chatroom|![Prototype of Main](/resources/prototypes/Chatroom.png)|
+|Intro|![Prototype of Intro](/resources/prototypes/Intro.png)|
+|Users|![Prototype of Users](/resources/prototypes/Main_Users.png)|
+|Chats|![Prototype of Chats](/resources/prototypes/Main_Chats.png)|
+|Chatroom|![Prototype of Chatroom](/resources/prototypes/Chatroom.png)|

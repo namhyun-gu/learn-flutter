@@ -12,6 +12,7 @@ Not yet 😓
 
 Case Name | Image
 :---:|:---:
+Intro|None
 Users|None
 Chats|None
 Chatroom|None
