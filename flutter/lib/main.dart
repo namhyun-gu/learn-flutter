@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:simple_chat/chats.dart';
 import 'package:simple_chat/intro.dart';
 import 'package:simple_chat/users.dart';
+import 'package:simple_chat/utils.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key key}) : super(key: key);
@@ -12,22 +12,19 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final List<String> _title = ['Users', 'Chats'];
-  final List<Widget> _children = [UsersPage(), ChatsPage()];
-
   PageController _pageController;
   int _currentIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    _getUserIdFromLocal().then((id) {
+    _pageController = PageController();
+    Utils.getUserIdFromLocal().then((id) {
       if (id == null) {
         Navigator.pushReplacement(
             context, MaterialPageRoute(builder: (context) => IntroPage()));
       }
     });
-    _pageController = PageController();
   }
 
   @override
@@ -38,9 +35,12 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
+    final List<String> _childTitle = ['Users', 'Chats'];
+    final _children = [UsersPage(), ChatsPage()];
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(_title[_currentIndex]),
+        title: Text(_childTitle[_currentIndex]),
         elevation: 1.0,
       ),
       body: PageView(
@@ -61,11 +61,6 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  Future<String> _getUserIdFromLocal() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    return prefs.getString('pref_user_id');
-  }
-
   _onPageChanged(int page) {
     setState(() {
       _currentIndex = page;
@@ -77,4 +72,3 @@ class _MainPageState extends State<MainPage> {
         duration: const Duration(milliseconds: 300), curve: Curves.ease);
   }
 }
-

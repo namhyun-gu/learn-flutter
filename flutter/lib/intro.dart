@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:simple_chat/main.dart';
+import 'package:simple_chat/model/user.dart';
 
 class IntroPage extends StatefulWidget {
   IntroPage({Key key}) : super(key: key);
@@ -89,7 +90,7 @@ class _IntroPageState extends State<IntroPage> {
   }
 
   _saveUserToRemote(String name, void callback(String refId)) {
-    Firestore.instance.collection('users').add({'name': name}).then((ref) {
+    Firestore.instance.collection('users').add(User(name).toMap()).then((ref) {
       callback(ref.documentID);
     });
   }
