@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:simple_chat/chat_room.dart';
 import 'package:simple_chat/model/chat_room.dart';
 import 'package:simple_chat/model/user.dart';
 
@@ -30,7 +31,9 @@ class _ChatRoomItemState extends State<ChatRoomItem> {
 
   @override
   Widget build(BuildContext context) {
-    final latestMessage = widget.chatRoomItem.latestMessage;
+    final chatRoom = widget.chatRoomItem;
+    final chatRoomId = chatRoom.reference.documentID;
+    final latestMessage = chatRoom.latestMessage;
 
     return Column(
       children: <Widget>[
@@ -44,10 +47,16 @@ class _ChatRoomItemState extends State<ChatRoomItem> {
                 : ""),
           ),
           title: Text(anotherUserName),
-          subtitle: Text(latestMessage != null && anotherUserName.isNotEmpty
-              ? latestMessage
-              : "", maxLines: 1, overflow: TextOverflow.ellipsis),
-          onTap: () {},
+          subtitle: Text(
+              latestMessage != null && anotherUserName.isNotEmpty
+                  ? latestMessage
+                  : "",
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis),
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ChatRoomPage(chatRoomId, anotherUserName)));
+          },
         ),
         Divider(
           height: 4.0,
