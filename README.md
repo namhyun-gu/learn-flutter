@@ -10,7 +10,7 @@ Simple Chat application write by mobile app frameworks.
 | :-------: | :---------: | :----------: | :--------: |
 |   Intro   |    Done     |  Not tested  | Not tested |
 |   Users   | In Progress |  Not tested  | Not tested |
-|   Chats   | Not started |  Not tested  | Not tested |
+|   Chats   | In Progress |  Not tested  | Not tested |
 | Chatroom  | Not started |  Not tested  | Not tested |
 
 - [react-native](/react-native)
