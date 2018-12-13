@@ -1,10 +1,8 @@
-# Learn app frameworks
+# Learn flutter
 
-Simple Chat application write by mobile app frameworks.
+Simple Chat application write by flutter.
 
 ## Work Progress
-
-- [flutter](/flutter)
 
 | Case Name |   Status    | Test Android |  Test iOS  |
 | :-------: | :---------: | :----------: | :--------: |
@@ -13,20 +11,20 @@ Simple Chat application write by mobile app frameworks.
 |   Chats   | In Progress |  Not tested  | Not tested |
 | Chatroom  | In Progress |  Not tested  | Not tested |
 
-- [react-native](/react-native)
+## Prototype / Screenshot
 
-| Case Name |   Status    | Test Android |  Test iOS  |
-| :-------: | :---------: | :----------: | :--------: |
-|   Intro   | Not started |  Not tested  | Not tested |
-|   Users   | Not started |  Not tested  | Not tested |
-|   Chats   | Not started |  Not tested  | Not tested |
-| Chatroom  | Not started |  Not tested  | Not tested |
+| Case Name |        Prototype        |                 Screenshot                 |
+| :-------: | :---------------------: | :----------------------------------------: |
+|   Intro   |   ![prototype_intro]    |   ![screenshot_intro]{: height="640px"}    |
+|   Users   | ![prototype_main_users] | ![screenshot_main_users]{: height="640px"} |
+|   Chats   | ![prototype_main_chats] | ![screenshot_main_chats]{: height="640px"} |
+| Chatroom  |  ![prototype_chatroom]  |  ![screenshot_chatroom]{: height="640px"}  |
 
-## Prototype
-
-| Case Name |                            Image                             |
-| :-------: | :----------------------------------------------------------: |
-|   Intro   |    ![Prototype of Intro](/resources/prototypes/Intro.png)    |
-|   Users   | ![Prototype of Users](/resources/prototypes/Main_Users.png)  |
-|   Chats   | ![Prototype of Chats](/resources/prototypes/Main_Chats.png)  |
-| Chatroom  | ![Prototype of Chatroom](/resources/prototypes/Chatroom.png) |
+[prototype_intro]: /resources/prototypes/Intro.png
+[prototype_main_users]: /resources/prototypes/Main_Users.png
+[prototype_main_chats]: /resources/prototypes/Main_Chats.png
+[prototype_chatroom]: /resources/prototypes/Chatroom.png
+[screenshot_intro]: /resources/screenshots/Intro.png
+[screenshot_main_users]: /resources/screenshots/Main_Users.png
+[screenshot_main_chats]: /resources/screenshots/Main_Chats.png
+[screenshot_chatroom]: /resources/screenshots/Chatroom.png
